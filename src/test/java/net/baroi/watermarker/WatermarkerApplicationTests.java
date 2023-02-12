@@ -19,7 +19,7 @@ class WatermarkerApplicationTests {
             final Font watermarkFont = new Font(FontType.HELVETICA_BOLD, 50f, rgbColor);
             final File sourcePdfFile = new File(sourceFileName);
             final File targetPdfFile = new File(targetFileName);
-            Watermarker.satermarkPdfFile(watermarkText, watermarkFont, sourcePdfFile, targetPdfFile);
+            Watermarker.watermarkPdfFile(watermarkText, watermarkFont, sourcePdfFile, targetPdfFile);
         } catch (Exception e) {
             fail("Wartermarking failed.", e);
         }

@@ -12,7 +12,7 @@ import org.apache.pdfbox.util.Matrix;
 
 public class Watermarker {
 
-    public static void satermarkPdfFile(final String watermarkText,
+    public static void watermarkPdfFile(final String watermarkText,
             final Font watermarkFont, final File sourcePdfFile, final File targetPdfFile) throws WatermarkerException {
 
         try (PDDocument doc = PDDocument.load(sourcePdfFile)) {
